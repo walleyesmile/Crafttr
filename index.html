@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CoinCrafter - AI Meme Coin Generator. Buat meme coin viral dengan AI dalam hitungan detik.">
+    <meta name="keywords" content="meme coin, AI, generator, cryptocurrency, Web3">
+    <meta name="theme-color" content="#000000">
+    <title>CoinCrafter - AI Meme Coin Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <!-- Logo dan Brand -->
+            <div class="header-brand">
+                <div class="logo" id="logo">
+                    <span class="logo-icon">🎨</span>
+                    <span class="logo-text">CoinCrafter</span>
+                </div>
+                <div class="ticker-badge">
+                    <span class="ticker-symbol">$CRAFTR</span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#generator" class="nav-link">Generator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Launch App Button -->
+            <button class="btn btn-primary btn-launch" id="btn-launch-header">
+                Launch App
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <!-- Background Effects Placeholder -->
+            <div class="hero-bg" id="hero-bg">
+                <div class="aurora" id="aurora"></div>
+                <div class="floating-orbs" id="floating-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+                <div class="mouse-glow" id="mouse-glow"></div>
+                <div class="glass-overlay"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="badge badge-hero">
+                    <span class="badge-icon">✨</span>
+                    <span class="badge-text">AI Meme Coin Generator</span>
+                </div>
+
+                <h1 class="hero-heading">
+                    Craft Your Next Viral Meme Coin
+                </h1>
+
+                <p class="hero-subheading">
+                    Generate unique meme coin names, tickers, narratives, logos, slogans and viral tweets in seconds.
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" id="btn-generate-hero">
+                        Generate Coin
+                    </button>
+                    <button class="btn btn-secondary btn-large" id="btn-learn-more">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generator Section -->
+    <section id="generator" class="generator">
+        <div class="generator-container">
+            <div class="section-header">
+                <h2 class="section-title">AI Generator</h2>
+                <p class="section-description">Hasilkan coin unik dengan sentuhan AI dalam sekejap</p>
+            </div>
+
+            <!-- Generator Card Result -->
+            <div class="generator-card" id="generator-card">
+                <div class="card-header">
+                    <div class="coin-logo" id="coin-logo">
+                        <img src="#" alt="Coin Logo" class="logo-image">
+                    </div>
+                    <div class="card-status">
+                        <span class="status-badge" id="status-badge">Generated</span>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <!-- Token Name -->
+                    <div class="card-field">
+                        <label class="field-label">Token Name</label>
+                        <div class="field-value" id="token-name">Moon Dawg 🌙</div>
+                    </div>
+
+                    <!-- Ticker -->
+                    <div class="card-field">
+                        <label class="field-label">Ticker</label>
+                        <div class="field-value" id="ticker">$MOONDAWG</div>
+                    </div>
+
+                    <!-- Narrative -->
+                    <div class="card-field">
+                        <label class="field-label">Narrative</label>
+                        <div class="field-value field-long" id="narrative">
+                            A playful meme coin celebrating the nocturnal adventures of our beloved moon dog. Community-driven with a focus on fun and engagement.
+                        </div>
+                    </div>
+
+                    <!-- Slogan -->
+                    <div class="card-field">
+                        <label class="field-label">Slogan</label>
+                        <div class="field-value" id="slogan">To the Moon with Our Best Friend 🚀</div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="card-field">
+                        <label class="field-label">Description</label>
+                        <div class="field-value field-long" id="description">
+                            Join the Moon Dawg community where every howl echoes across the blockchain. This isn't just a token—it's a movement of dog lovers united by lunar energy.
+                        </div>
+                    </div>
+
+                    <!-- Theme -->
+                    <div class="card-field">
+                        <label class="field-label">Theme</label>
+                        <div class="field-value" id="theme">Space & Nature</div>
+                    </div>
+
+                    <!-- Emoji -->
+                    <div class="card-field">
+                        <label class="field-label">Emoji</label>
+                        <div class="field-value" id="emoji">🌙🐕🚀</div>
+                    </div>
+
+                    <!-- Metrics -->
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <label class="metric-label">Meme Score</label>
+                            <div class="metric-value" id="meme-score">9.2/10</div>
+                            <div class="progress-bar" id="meme-score-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <label class="metric-label">Moon Chance</label>
+                            <div class="metric-value" id="moon-chance">8.7/10</div>
+                            <div class="progress-bar" id="moon-chance-bar">
+                                <div class="progress-fill" style="width: 87%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <label class="metric-label">Community Vibes</label>
+                            <div class="metric-value" id="community-vibes">8.5/10</div>
+                            <div class="progress-bar" id="community-vibes-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <label class="metric-label">Launch Rating</label>
+                            <div class="metric-value" id="launch-rating">8.9/10</div>
+                            <div class="progress-bar" id="launch-rating-bar">
+                                <div class="progress-fill" style="width: 89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-small" id="btn-copy-name">
+                        <span class="btn-icon">📋</span>
+                        <span class="btn-text">Copy Name</span>
+                    </button>
+                    <button class="btn btn-outline btn-small" id="btn-copy-ticker">
+                        <span class="btn-icon">📋</span>
+                        <span class="btn-text">Copy Ticker</span>
+                    </button>
+                    <button class="btn btn-outline btn-small" id="btn-copy-description">
+                        <span class="btn-icon">📋</span>
+                        <span class="btn-text">Copy Description</span>
+                    </button>
+                    <button class="btn btn-outline btn-small" id="btn-copy-tweet">
+                        <span class="btn-icon">🐦</span>
+                        <span class="btn-text">Copy Tweet</span>
+                    </button>
+                    <button class="btn btn-primary btn-small" id="btn-generate-again">
+                        <span class="btn-icon">🔄</span>
+                        <span class="btn-text">Generate Again</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tweet Generator Section -->
+    <section id="tweet-generator" class="tweet-generator">
+        <div class="tweet-generator-container">
+            <div class="section-header">
+                <h2 class="section-title">Tweet Generator</h2>
+                <p class="section-description">Buat tweet viral untuk coin Anda</p>
+            </div>
+
+            <div class="tweet-grid">
+                <!-- Tweet Card -->
+                <div class="tweet-card" id="tweet-card">
+                    <div class="tweet-header">
+                        <div class="tweet-avatar"></div>
+                        <div class="tweet-meta">
+                            <div class="tweet-name">@CoinCrafter</div>
+                            <div class="tweet-handle">@coincrafter_ai</div>
+                        </div>
+                    </div>
+                    <div class="tweet-content" id="tweet-content">
+                        🌙 Introducing Moon Dawg 🐕 - The meme coin that howls to the moon! Join our pack of lunar lovers and let's reach the stars together. $MOONDAWG #MoonCoin #Web3 🚀
+                    </div>
+                    <div class="tweet-actions">
+                        <button class="btn btn-small btn-outline" id="btn-copy-tweet-card">
+                            Copy Tweet
+                        </button>
+                        <button class="btn btn-small btn-outline" id="btn-share-tweet">
+                            Share on Twitter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Twitter Bio Card -->
+                <div class="bio-card" id="bio-card">
+                    <div class="bio-header">
+                        <h3 class="bio-title">Twitter Bio</h3>
+                    </div>
+                    <div class="bio-content" id="bio-content">
+                        🌙 Moon Dawg Community | Let's reach for the stars 🚀 | $MOONDAWG | Web3 Native
+                    </div>
+                    <div class="bio-actions">
+                        <button class="btn btn-small btn-outline" id="btn-copy-bio">
+                            Copy Bio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hashtag Card -->
+                <div class="hashtag-card" id="hashtag-card">
+                    <div class="hashtag-header">
+                        <h3 class="hashtag-title">Trending Hashtags</h3>
+                    </div>
+                    <div class="hashtag-content" id="hashtag-content">
+                        <div class="hashtag-item">#MoonDawg</div>
+                        <div class="hashtag-item">#MoonCoin</div>
+                        <div class="hashtag-item">#Web3Gaming</div>
+                        <div class="hashtag-item">#MemeCoin</div>
+                        <div class="hashtag-item">#ToTheMoon</div>
+                        <div class="hashtag-item">#CryptoMemesGalore</div>
+                    </div>
+                    <div class="hashtag-actions">
+                        <button class="btn btn-small btn-outline" id="btn-copy-hashtags">
+                            Copy All Hashtags
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="statistics-container">
+            <div class="section-header">
+                <h2 class="section-title">Global Stats</h2>
+                <p class="section-description">Lihat aktivitas komunitas CoinCrafter</p>
+            </div>
+
+            <div class="stats-grid">
+                <!-- Total Coins Generated -->
+                <div class="stat-card" id="stat-total-coins">
+                    <div class="stat-icon">🎨</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Total Coins Generated</div>
+                        <div class="stat-value" id="stat-value-coins">42,569</div>
+                        <div class="stat-change positive">+15% today</div>
+                    </div>
+                </div>
+
+                <!-- Online Users -->
+                <div class="stat-card" id="stat-online-users">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Online Users</div>
+                        <div class="stat-value" id="stat-value-users">3,847</div>
+                        <div class="stat-change positive">+42% this week</div>
+                    </div>
+                </div>
+
+                <!-- Trending Narratives -->
+                <div class="stat-card" id="stat-trending-narratives">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Trending Narratives</div>
+                        <div class="stat-value" id="stat-value-narratives">127</div>
+                        <div class="stat-change positive">+8% this month</div>
+                    </div>
+                </div>
+
+                <!-- Most Generated Animal -->
+                <div class="stat-card" id="stat-most-animal">
+                    <div class="stat-icon">🐕</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Most Generated Animal</div>
+                        <div class="stat-value" id="stat-value-animal">Doge 🐕</div>
+                        <div class="stat-change positive">12,420 coins</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="features-container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-description">Semua yang Anda butuhkan untuk menciptakan meme coin sempurna</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature Card 1: AI Name Generator -->
+                <div class="feature-card" id="feature-1">
+                    <div class="feature-icon">🤖</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">AI Name Generator</h3>
+                        <p class="feature-description">
+                            Generate creative and catchy meme coin names powered by advanced AI algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 2: Smart Ticker Creation -->
+                <div class="feature-card" id="feature-2">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Smart Ticker Creation</h3>
+                        <p class="feature-description">
+                            Automatically generate unique and memorable ticker symbols for your coins.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 3: Logo Generation -->
+                <div class="feature-card" id="feature-3">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Logo Generation</h3>
+                        <p class="feature-description">
+                            Create stunning visual logos that capture the essence of your meme coin.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 4: Narrative Builder -->
+                <div class="feature-card" id="feature-4">
+                    <div class="feature-icon">📖</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Narrative Builder</h3>
+                        <p class="feature-description">
+                            Craft compelling coin narratives that resonate with your community.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 5: Viral Tweet Generator -->
+                <div class="feature-card" id="feature-5">
+                    <div class="feature-icon">🐦</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Viral Tweet Generator</h3>
+                        <p class="feature-description">
+                            Generate trending tweets designed to go viral on social media platforms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 6: Community Analytics -->
+                <div class="feature-card" id="feature-6">
+                    <div class="feature-icon">📈</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Community Analytics</h3>
+                        <p class="feature-description">
+                            Track metrics and understand what makes your meme coin resonate with users.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 7: One-Click Export -->
+                <div class="feature-card" id="feature-7">
+                    <div class="feature-icon">⬇️</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">One-Click Export</h3>
+                        <p class="feature-description">
+                            Export all your coin data in multiple formats for seamless integration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 8: Real-time Collaboration -->
+                <div class="feature-card" id="feature-8">
+                    <div class="feature-icon">🤝</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Real-time Collaboration</h3>
+                        <p class="feature-description">
+                            Work together with your team to perfect your meme coin concept.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="faq-container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Jawaban untuk pertanyaan umum tentang CoinCrafter</p>
+            </div>
+
+            <div class="accordion" id="accordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item" id="faq-item-1">
+                    <button class="accordion-header" id="accordion-header-1">
+                        <span class="accordion-title">Apa itu CoinCrafter?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="accordion-content-1">
+                        <p>CoinCrafter adalah platform AI yang membantu Anda membuat meme coin yang unik dan menarik dalam hitungan detik. Kami menggunakan teknologi AI terdepan untuk generate nama, ticker, narrative, logo, dan konten viral.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item" id="faq-item-2">
+                    <button class="accordion-header" id="accordion-header-2">
+                        <span class="accordion-title">Apakah saya perlu coding knowledge untuk menggunakan CoinCrafter?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="accordion-content-2">
+                        <p>Tidak! CoinCrafter dirancang untuk semua orang. Interface kami intuitif dan mudah digunakan, tidak perlu technical knowledge apapun.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item" id="faq-item-3">
+                    <button class="accordion-header" id="accordion-header-3">
+                        <span class="accordion-title">Berapa harga CoinCrafter?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="accordion-content-3">
+                        <p>CoinCrafter menawarkan plan gratis untuk testing, dan berbagai premium plan untuk fitur advanced. Lihat pricing page untuk detail lengkap.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item" id="faq-item-4">
+                    <button class="accordion-header" id="accordion-header-4">
+                        <span class="accordion-title">Bagaimana cara mulai membuat coin pertama saya?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="accordion-content-4">
+                        <p>1. Sign up untuk akun gratis. 2. Klik tombol "Generate Coin". 3. AI kami akan membuat coin unique untuk Anda. 4. Edit dan customize sesuai preferensi. 5. Export dan share dengan komunitas!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item" id="faq-item-5">
+                    <button class="accordion-header" id="accordion-header-5">
+                        <span class="accordion-title">Apakah ada limit generasi coin?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="accordion-content-5">
+                        <p>Plan gratis: 5 generasi per hari. Premium plan: unlimited generasi dengan fitur advanced. Upgrade kapan saja untuk unlimited access.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item" id="faq-item-6">
+                    <button class="accordion-header" id="accordion-header-6">
+                        <span class="accordion-title">Bisakah saya menggunakan coin yang di-generate untuk project serius?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="accordion-content-6">
+                        <p>Ya! Semua konten yang di-generate adalah hasil original dan dapat digunakan untuk project Anda. Anda memiliki full rights atas semua hasil generasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Ada pertanyaan? Kami siap membantu!</p>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name" class="form-label">Name</label>
+                    <input type="text" id="contact-name" class="form-input" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email" class="form-label">Email</label>
+                    <input type="email" id="contact-email" class="form-input" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-subject" class="form-label">Subject</label>
+                    <input type="text" id="contact-subject" class="form-input" placeholder="What is this about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea id="contact-message" class="form-textarea" placeholder="Your message..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large" id="btn-submit-contact">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎨</span>
+                        <span class="logo-text">CoinCrafter</span>
+                    </div>
+                    <p class="footer-tagline">AI Meme Coin Generator</p>
+                </div>
+
+                <!-- Footer Navigation -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#generator" class="footer-link">Generator</a></li>
+                        <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                        <li><a href="#blog" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Resources -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#docs" class="footer-link">Documentation</a></li>
+                        <li><a href="#guide" class="footer-link">Getting Started</a></li>
+                        <li><a href="#api" class="footer-link">API</a></li>
+                        <li><a href="#support" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Company -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#careers" class="footer-link">Careers</a></li>
+                        <li><a href="#press" class="footer-link">Press</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Socials -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <ul class="footer-socials">
+                        <li>
+                            <a href="#twitter" class="social-link social-twitter" title="Twitter">
+                                <span class="social-icon">𝕏</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#discord" class="social-link social-discord" title="Discord">
+                                <span class="social-icon">💬</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#github" class="social-link social-github" title="GitHub">
+                                <span class="social-icon">🐙</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 CoinCrafter. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#privacy" class="legal-link">Privacy Policy</a>
+                    <a href="#terms" class="legal-link">Terms of Service</a>
+                    <a href="#cookies" class="legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen Placeholder -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p class="loading-text">Generating your coin...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notification Placeholder -->
+    <div class="toast-container" id="toast-container">
+        <!-- Toasts will be added here dynamically -->
+    </div>
+
+    <!-- Modal Placeholder -->
+    <div class="modal" id="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-title">Modal Title</h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be added here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
+                <button class="btn btn-primary" id="modal-confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
